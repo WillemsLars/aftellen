@@ -1,8 +1,12 @@
-let tellen = 10
+input.onButtonPressed(Button.A, function () {
+    GETAL_1 += 1
+})
+input.onButtonPressed(Button.B, function () {
+    GETAL_1 += -1
+})
+let GETAL_1 = 0
 basic.forever(function () {
-    if (tellen != -1) {
-        basic.showNumber(tellen)
-        tellen += -1
-        basic.pause(100)
+    if (GETAL_1 > -1) {
+        basic.showNumber(GETAL_1)
     }
 })
